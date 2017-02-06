@@ -1,19 +1,19 @@
-# Flicks
+# iFindMovies
 An app to discover movies. Assignment for the CodePath class 
 
 
-# Project 1 - Flicks
+# Project 1 - iFindMovies
 
-**Flicks** is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
+**iFindMovies** is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: **X** hours spent in total
+Time spent: 9 hours spent in total
 
 ## User Stories
 
 The following **required** functionality is complete:
 
-- [ ] User can view a list of movies currently playing in theaters from The Movie Database.
-- [ ] Poster images are loaded using the UIImageView category in the AFNetworking library.
+- [x] User can view a list of movies currently playing in theaters from The Movie Database.
+- [x] Poster images are loaded using the UIImageView category in the AFNetworking library.
 - [ ] User sees a loading state while waiting for the movies API.
 - [ ] User can pull to refresh the movie list.
 
