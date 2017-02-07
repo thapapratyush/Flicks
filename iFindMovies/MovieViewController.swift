@@ -7,18 +7,32 @@
 //
 
 import UIKit
+import AFNetworking
+import MBProgressHUD
 
 class MovieViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var errorView: UILabel!
     
     var movies: [NSDictionary]?
+    var filteredData: [NSDictionary]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        errorView.isHidden = true
+        
+        // Initialize a UIRefreshControl
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refreshControlAction(_:)), for: UIControlEvents.valueChanged)
+        tableView.insertSubview(refreshControl, at: 0)
+        
         tableView.dataSource = self
         tableView.delegate = self
+        
         // Do any additional setup after loading the view.
+        MBProgressHUD.showAdded(to: self.view, animated: true)
         
         let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")!
@@ -31,6 +45,12 @@ class MovieViewController: UIViewController, UITableViewDelegate, UITableViewDat
                     
                     self.movies = dataDictionary["results"] as? [NSDictionary]
                     self.tableView.reloadData()
+                    
+                    MBProgressHUD.hide(for: self.view, animated: true)
+                    refreshControl.endRefreshing()
+                    
+                }else {
+                    self.errorView.isHidden = false
                 }
             }
         }
@@ -54,11 +74,23 @@ class MovieViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let overview = movie["overview"] as! String
         let posterPath = movie["poster_path"] as! String
         let posterURLbase = "https://image.tmdb.org/t/p/w342"
+        let imageURL = NSURL(string: posterURLbase + posterPath)
         
         cell.titleLabel!.text = title
         cell.overview!.text = overview
+        cell.posterView.setImageWith(imageURL as! URL)
         
         return cell
+    }
+    
+    func refreshControlAction(_ refreshControl: UIRefreshControl) {
+        
+        // When there is no data, refresh tableView
+        self.tableView.reloadData()
+        
+        // Tell the refreshControl to stop spinning
+        refreshControl.endRefreshing()
+        
     }
     
 

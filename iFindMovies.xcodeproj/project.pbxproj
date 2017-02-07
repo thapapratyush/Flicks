@@ -13,9 +13,12 @@
 		B15DB5C71E48136F00AA1B57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15DB5C51E48136F00AA1B57 /* LaunchScreen.storyboard */; };
 		B15DB5CF1E4813E400AA1B57 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DB5CE1E4813E400AA1B57 /* MovieViewController.swift */; };
 		B15DB5D21E48257400AA1B57 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DB5D11E48257400AA1B57 /* MovieCell.swift */; };
+		E7CE105DDDD5004D99284322 /* Pods_iFindMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08FD28603D2F192F3DEEFF7 /* Pods_iFindMovies.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		345FE19DF1C545976A22365D /* Pods-iFindMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFindMovies.release.xcconfig"; path = "Pods/Target Support Files/Pods-iFindMovies/Pods-iFindMovies.release.xcconfig"; sourceTree = "<group>"; };
+		B08FD28603D2F192F3DEEFF7 /* Pods_iFindMovies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iFindMovies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15DB5B91E48136F00AA1B57 /* iFindMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFindMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15DB5BC1E48136F00AA1B57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B15DB5C11E48136F00AA1B57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		B15DB5C81E48136F00AA1B57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B15DB5CE1E4813E400AA1B57 /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		B15DB5D11E48257400AA1B57 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		F2B342E0DD577F309B2F1027 /* Pods-iFindMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFindMovies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iFindMovies/Pods-iFindMovies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7CE105DDDD5004D99284322 /* Pods_iFindMovies.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A180DDB7D7673D7B7BD2829 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B08FD28603D2F192F3DEEFF7 /* Pods_iFindMovies.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A5A0BFB4160B242CFB8F54D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2B342E0DD577F309B2F1027 /* Pods-iFindMovies.debug.xcconfig */,
+				345FE19DF1C545976A22365D /* Pods-iFindMovies.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B15DB5B01E48136F00AA1B57 = {
 			isa = PBXGroup;
 			children = (
 				B15DB5BB1E48136F00AA1B57 /* iFindMovies */,
 				B15DB5BA1E48136F00AA1B57 /* Products */,
+				2A5A0BFB4160B242CFB8F54D /* Pods */,
+				2A180DDB7D7673D7B7BD2829 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,9 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B15DB5CB1E48136F00AA1B57 /* Build configuration list for PBXNativeTarget "iFindMovies" */;
 			buildPhases = (
+				3D801979A76FE8511C3F25BD /* [CP] Check Pods Manifest.lock */,
 				B15DB5B51E48136F00AA1B57 /* Sources */,
 				B15DB5B61E48136F00AA1B57 /* Frameworks */,
 				B15DB5B71E48136F00AA1B57 /* Resources */,
+				36E983719028FF8122E1A265 /* [CP] Embed Pods Frameworks */,
+				CFFAE9A38E378B607B064471 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +176,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36E983719028FF8122E1A265 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iFindMovies/Pods-iFindMovies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D801979A76FE8511C3F25BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CFFAE9A38E378B607B064471 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iFindMovies/Pods-iFindMovies-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B15DB5B51E48136F00AA1B57 /* Sources */ = {
@@ -278,6 +353,7 @@
 		};
 		B15DB5CC1E48136F00AA1B57 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2B342E0DD577F309B2F1027 /* Pods-iFindMovies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iFindMovies/Info.plist;
@@ -290,6 +366,7 @@
 		};
 		B15DB5CD1E48136F00AA1B57 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 345FE19DF1C545976A22365D /* Pods-iFindMovies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iFindMovies/Info.plist;

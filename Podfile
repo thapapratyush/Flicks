@@ -7,4 +7,5 @@ target 'iFindMovies' do
 
   # Pods for iFindMovies
     pod 'AFNetworking'
+    pod 'MBProgressHUD'
 end
