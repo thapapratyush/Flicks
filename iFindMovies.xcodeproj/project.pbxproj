@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B158F1A01E516CE6002E0074 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B158F19F1E516CE6002E0074 /* SettingsViewController.swift */; };
 		B15DB5BD1E48136F00AA1B57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DB5BC1E48136F00AA1B57 /* AppDelegate.swift */; };
 		B15DB5C21E48136F00AA1B57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15DB5C01E48136F00AA1B57 /* Main.storyboard */; };
 		B15DB5C41E48136F00AA1B57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15DB5C31E48136F00AA1B57 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		345FE19DF1C545976A22365D /* Pods-iFindMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFindMovies.release.xcconfig"; path = "Pods/Target Support Files/Pods-iFindMovies/Pods-iFindMovies.release.xcconfig"; sourceTree = "<group>"; };
 		B08FD28603D2F192F3DEEFF7 /* Pods_iFindMovies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iFindMovies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B158F19F1E516CE6002E0074 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B15DB5B91E48136F00AA1B57 /* iFindMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFindMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15DB5BC1E48136F00AA1B57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B15DB5C11E48136F00AA1B57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				B15DB5CE1E4813E400AA1B57 /* MovieViewController.swift */,
+				B158F19F1E516CE6002E0074 /* SettingsViewController.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				B15DB5BD1E48136F00AA1B57 /* AppDelegate.swift in Sources */,
 				B15DB5CF1E4813E400AA1B57 /* MovieViewController.swift in Sources */,
 				B15DB5D21E48257400AA1B57 /* MovieCell.swift in Sources */,
+				B158F1A01E516CE6002E0074 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +400,7 @@
 				B15DB5CD1E48136F00AA1B57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

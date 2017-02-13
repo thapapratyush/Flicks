@@ -10,16 +10,20 @@ import UIKit
 import AFNetworking
 import MBProgressHUD
 
-class MovieViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MovieViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, DataEnteredDelegate  {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var errorView: UILabel!
     
     var movies: [NSDictionary]?
     var filteredData: [NSDictionary]?
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "iFindMovies"
         
         errorView.isHidden = true
         
