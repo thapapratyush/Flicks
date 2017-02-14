@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EE1C2B6607212909C2CE6CE46A432C48533A02D9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EE1C2B6607212909C2CE6CE46A432C48533A02D9" : 9223372036854775807,
+    "77F34B74AA6488B2D181ABD90E3DD8D3394D69C6" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "176ED49C-265F-4A17-A43A-3CF54F28B992",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EE1C2B6607212909C2CE6CE46A432C48533A02D9" : "iFindMovies\/",
+    "77F34B74AA6488B2D181ABD90E3DD8D3394D69C6" : "..\/..\/Allgitclones\/Flicks-CodePath"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "iFindMovies",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "iFindMovies.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AaryaBC\/Flicks-CodePath.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "77F34B74AA6488B2D181ABD90E3DD8D3394D69C6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/thapapratyush\/iFindMovies.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EE1C2B6607212909C2CE6CE46A432C48533A02D9"
+    }
+  ]
+}

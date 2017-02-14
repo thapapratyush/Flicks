@@ -15,15 +15,20 @@ protocol DataEnteredDelegate: class {
 
 class SettingsViewController: UIViewController {
 
-    @IBOutlet weak var viewzzz: UITableView!
     @IBOutlet weak var DarkSwitch: UITableViewCell!
     
-    var DarkOn = false
+    @IBOutlet weak var rando: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Settings"
+        if (self.rando.isOn){
+            
+        }
+        else{
+            
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -33,8 +38,9 @@ class SettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func DarkAction(_ sender: Any) {
-        DarkSwitch?.userDidEnterInformation(info: DarkOn!)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let movieViewController = segue.destination as! MovieViewController
+        movieViewController.randoMuji = self.rando.isOn
     }
 
     /*

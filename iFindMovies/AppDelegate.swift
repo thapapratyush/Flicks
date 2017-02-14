@@ -15,6 +15,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let nowPlayingNavigationController = storyBoard.instantiateViewController(withIdentifier: "MovieNavigationController") as! UINavigationController
+        let nowPlayingViewController = nowPlayingNavigationController.topViewController as! MovieViewController
+        nowPlayingViewController.endPoint = "now_playing"
+        nowPlayingNavigationController.tabBarItem.title = "Now Playing"
+        nowPlayingNavigationController.tabBarItem.image = UIImage(named: "nowplaying")
+        let topRatedNavigationController = storyBoard.instantiateViewController(withIdentifier: "MovieNavigationController") as! UINavigationController
+        let topRatedViewController = topRatedNavigationController.topViewController as! MovieViewController
+        topRatedViewController.endPoint = "top_rated"
+        topRatedNavigationController.tabBarItem.title = "Top Rated"
+        topRatedNavigationController.tabBarItem.image = UIImage(named: "toprated")
+        let upcomingMovieNavigationController = storyBoard.instantiateViewController(withIdentifier: "MovieNavigationController") as! UINavigationController
+        let upcomingMoviesViewController = upcomingMovieNavigationController.topViewController as! MovieViewController
+        upcomingMoviesViewController.endPoint = "upcoming"
+        upcomingMoviesViewController.tabBarItem.title = "Coming Soon"
+        upcomingMoviesViewController.tabBarItem.image = UIImage(named: "upcoming")
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [nowPlayingNavigationController, topRatedNavigationController, upcomingMovieNavigationController]
+        window?.rootViewController = tabBarController
+        window?.makeKeyAndVisible()
         // Override point for customization after application launch.
         return true
     }
